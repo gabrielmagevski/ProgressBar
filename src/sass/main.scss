@@ -1,0 +1,93 @@
+// steps Checkout Page
+.container-progress {
+  max-width: 630px;
+  margin: 0 auto;
+  position: relative;
+}
+.checkout-steps_items {
+	display: flex;
+	align-items: center;
+  justify-content: space-between;
+  z-index: 2;
+}
+
+.checkout-steps_items .checkout-steps_item_contain {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+
+.checkout-steps_items .checkout-steps_item_cart .icon {
+  border: 1px solid #0C3661;
+  border-radius: 50%;
+  color: #0C3661;
+  margin-bottom: 5px;
+  font-size: 20px;
+  background: #FFF;
+}
+.checkout-steps_items
+.checkout-steps_item_payment,
+.checkout-steps_item_confirmation,
+.checkout-steps_item_identification {
+.icon {
+    border: 1px solid #000;
+    border-radius: 50%;
+    color: #000;
+    margin-bottom: 5px;
+    background: #FFF;
+    font-size: 20px;
+  }
+}
+
+.checkout-steps_item_contain {
+  transition: opacity 300ms ease;
+  opacity: 0.6;
+}
+
+.item-active { 
+  transition: opacity 300ms ease;
+  opacity: 1;
+}
+
+.container-progress .bar-progress {
+  display: block;
+  left: 54px;
+  right: 1px;
+  height: 2px;
+  position: absolute;
+  top: 21px;
+  box-shadow: inset 0px 1px 0px 0px #c8d2e3, inset 0px -1px 0px 0px #c8d2e3;
+  z-index: -1;
+  width: 84%;
+}
+
+.icon .fa {
+  padding: 16px;
+}
+
+.bar-active-progress {
+  display: block;
+  left: 1px;
+  right: 1px;
+  height: 2px;
+  position: absolute;
+  transition: box-shadow 300ms ease;
+  box-shadow: inset 0px 1px 0px 0px #0C3661, inset 0px -1px 0px 0px #0C3661;
+  z-index: -1;
+}
+
+.text {
+  &-first,
+  &-secondary,
+  &-tertiary,
+  &-fourth {
+    font-weight: bold;
+    text-align: center;
+    color: #9B9B9B;
+    font-size: 16px;
+  }
+}
+
+.text-active {
+  color: #000 !important;
+}
